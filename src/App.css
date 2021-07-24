@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+.content {
+  padding-top: 10px;
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.page-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.content-wrap {
+  flex: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.home-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 5px;
+}
+
+.sticky-top {
+  background-color: #fff;
+  padding: 10px 0;
+}
+
+.main-footer {
+  background-color: rgb(226, 226, 226);
+  padding-top: 1em;
+  position: relative;
+  bottom: 0;
+  width: 100vw;
+  text-decoration: none;
+
+}
+
+
+.Menucard {
+  height: 600px;
+  border-radius: 6px;
+
+}
+
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0px 50px 0px;
+  border-bottom: 1px solid rgb(211, 209, 209);
+  min-height: 400px;
+}
+
+.intro {
+
+  text-align: right;
+  color: rgb(63, 63, 63);
+  font-weight: 400;
+  padding-right: 20px;
+  line-height: 2;
+  border-bottom: 1px ridge;
+  background-image: url(./bckgroundimgs/healthy-balanced-vegetarian-food-top-view2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(145, 144, 144);
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(94, 93, 93);
+
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .intro {
+    background-image: none;
+    background-color: brown;
+    text-align: center;
+    color: rgb(255, 254, 254);
+
   }
 }
