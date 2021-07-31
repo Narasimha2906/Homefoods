@@ -1,12 +1,19 @@
 import React, {Component} from 'react';
 import {Container, FormGroup, Col, Button,FormLabel,Row,FormText,Card} from 'react-bootstrap';
-import { Control, LocalForm, Errors } from 'react-redux-form';
+import { Control, Form, Errors,actions } from 'react-redux-form';
+import {connect} from 'react-redux';
 
 const required = (val) => val && val.length;
 const maxLength = (len) => (val) => !(val) || (val.length <= len);
 const minLength = (len) => (val) => val && (val.length >= len);
 const isNumber = (val) => !isNaN(Number(val));
 const validEmail = (val) => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val);
+
+const mapDispatchToProps = (dispatch) => {
+    return{
+     resetSignUpForm: () => {dispatch(actions.reset('signup'))}
+    }
+ } 
 
 class UserSignUp extends Component {
    constructor(props){
@@ -16,7 +23,8 @@ class UserSignUp extends Component {
    }
 
    handleSubmit(values){
-       console.log(JSON.stringify(values))
+       console.log(JSON.stringify(values));
+       this.props.resetSignUpForm();
    }
 
     render(){
@@ -44,7 +52,7 @@ class UserSignUp extends Component {
                         <Row className="justify-content-center mt-4">
                             
                         <Col>
-                                <LocalForm onSubmit={(values) => this.handleSubmit(values)}>
+                                <Form model="signup" onSubmit={(values) => this.handleSubmit(values)}>
                                     <Row className="justify-content-center">
                                         <Col md={4}>
                                         <FormGroup>
@@ -254,7 +262,7 @@ class UserSignUp extends Component {
                                             Submit
                                         </Button>
                                     </Row>
-                                </LocalForm>
+                                </Form>
                             </Col>
                         </Row>
                     </Container>
@@ -268,4 +276,4 @@ class UserSignUp extends Component {
     
 };
 
-export default UserSignUp;
+export default connect(null,mapDispatchToProps)(UserSignUp);

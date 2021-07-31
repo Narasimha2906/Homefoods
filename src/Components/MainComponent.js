@@ -8,7 +8,6 @@ import UserLogin from '../Pages/UserLogin';
 import Footer from './Footer'
 import About from '../Pages/About';
 import UserSignUp from '../Pages/UserSignUp';
-import SellerSignUp from '../Pages/SellerSignUp';
 import OrderCart from '../Components/OrderCart';
 import { Switch, Route, Redirect} from 'react-router-dom'
 
