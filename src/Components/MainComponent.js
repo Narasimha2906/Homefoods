@@ -14,8 +14,7 @@ import { Switch, Route, Redirect} from 'react-router-dom'
 
 
 
-class MainComponent extends PureComponent {
-   
+class MainComponent extends PureComponent { 
 
     render() {
         return (

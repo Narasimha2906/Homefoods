@@ -1,5 +1,4 @@
 import React from "react";
-
 import{BiDish} from 'react-icons/bi';
 import {FaInstagram,FaFacebookF,FaTwitter} from 'react-icons/fa';
 import { Container, Row, Col} from 'react-bootstrap';
@@ -46,7 +45,7 @@ function Footer() {
 
           </Row>
           <hr></hr>
-          <Row className="justify-content-center">
+          <Row className="footer-css">
           <p> ⓒ {year} HomeFoods | All rights Reserved</p>
           </Row>
           

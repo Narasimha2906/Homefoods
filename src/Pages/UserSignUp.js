@@ -257,10 +257,12 @@ class UserSignUp extends Component {
                                     </Row>
                 
                                 
-                                    <Row className="justify-content-center">
+                                    <Row className="justify-content-center p-2">
+                                        <Col md={1}>
                                         <Button variant="outline-success" type="submit">
                                             Submit
                                         </Button>
+                                        </Col>
                                     </Row>
                                 </Form>
                             </Col>

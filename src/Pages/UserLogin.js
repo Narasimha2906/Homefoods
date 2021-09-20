@@ -70,8 +70,10 @@ class UserLogin extends Component{
             
                                     </FormGroup>
                                                                          
-                                    <Row className="justify-content-center">
+                                    <Row className="justify-content-center p-2">
+                                        <Col md={3}>
                                         <Button type="submit" variant="outline-success" className="mt-2">Login</Button>
+                                        </Col>
                                     </Row>        
                                 </Form>
                             </Col>

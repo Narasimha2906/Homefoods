@@ -32,7 +32,10 @@
   bottom: 0;
   width: 100vw;
   text-decoration: none;
+}
 
+.footer-css {
+  text-align: center;
 }
 
 

@@ -109,10 +109,8 @@ class Home extends Component{
                         
                         
                     </Row>
-                    <Row className="justify-content-center">
-                   
-                        {menu}
-                        
+                    <Row className="justify-content-center">                   
+                        {menu}                        
                     </Row>
                 </Container>
             </>
